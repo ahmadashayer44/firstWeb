@@ -1,0 +1,115 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("../wallpaper_files/35663.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: background-image 0.8s linear;
+}
+
+.boxForFavorite {
+  background: transparent;
+  backdrop-filter: blur(100px);
+  width: 900px;
+  height: 600px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  overflow: visible;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  z-index: 7;
+  position: absolute;
+  transition: visibility 1s linear;
+  transition: opacity 0.8s linear;
+}
+.backButton {
+  position: absolute;
+  right: 20px;
+  bottom: 25px;
+
+  width: 150px;
+  height: 30px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: 0.5s;
+}
+.backButton:hover {
+  background-color: transparent;
+  backdrop-filter: blur(100);
+  color: whitesmoke;
+}
+.movies {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.scrollRight {
+  position: absolute;
+  right: calc(50% - 80px);
+  bottom: -275px;
+  width: 90px;
+  font-size: 55px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: transparent;
+  border: none;
+  color: white;
+  transition: 0.7s;
+  bottom: -13px;
+}
+
+.scrollRight2 {
+  position: absolute;
+  right: 34%;
+  width: 90px;
+  font-size: 55px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: transparent;
+  border: none;
+  color: white;
+  transition: 0.7s;
+  letter-spacing: -20px;
+  bottom: -13px;
+}
+
+.scrollRight:hover,
+.scrollLeft:hover,
+.scrollRight2:hover,
+.scrollLeft2:hover {
+  color: rgb(183, 45, 45);
+}
+
+.scrollLeft {
+  position: absolute;
+  left: calc(50% - 80px);
+  width: 90px;
+  font-size: 55px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: transparent;
+  border: none;
+  color: white;
+  transition: 0.7s;
+  bottom: -13px;
+}
+.scrollLeft2 {
+  position: absolute;
+  left: 32%;
+  bottom: -13px;
+  width: 90px;
+  font-size: 55px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: transparent;
+  border: none;
+  color: white;
+  transition: 0.7s;
+  letter-spacing: -20px;
+}

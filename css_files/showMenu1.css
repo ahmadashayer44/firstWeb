@@ -1,0 +1,458 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("../wallpaper_files/close-up-blue-purple-smoke-swirling-against-black-backdrop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: background-image 0.8s linear;
+}
+
+.box {
+  transition: visibility 0.2s, opacity 0.5s linear;
+}
+
+.box .menu {
+  background: transparent;
+  backdrop-filter: blur(60px);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 600px;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+}
+
+.box .menu h2 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 70px;
+  color: rgb(240, 240, 240);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.box .menu button {
+  padding: 20px;
+  margin: 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: black;
+  color: azure;
+  text-align: left;
+  font-size: 23px;
+  font-weight: bolder;
+  transition: 0.5s;
+  background: transparent;
+  text-align: center;
+}
+.box .menu button:hover {
+  background-color: antiquewhite;
+  color: darkslategrey;
+  font-size: 28px;
+  text-align: center;
+}
+
+.box .menu .forAnimation1 {
+  background: rgb(28, 150, 250);
+  width: 20px;
+  height: 10px;
+  border-radius: 50%;
+  animation: animate 6s infinite;
+}
+.box .menu .forAnimation2 {
+  background: rgb(230, 0, 255);
+  width: 20px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  animation: animate2 6s infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(580px) translateY(0);
+  }
+  50% {
+    transform: translateX(580px) translateY(-190px);
+  }
+  75% {
+    transform: translateX(0) translateY(-196px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(-580px) translateY(0);
+  }
+  50% {
+    transform: translateX(-580px) translateY(196px);
+  }
+  75% {
+    transform: translateX(0) translateY(196px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+.box2 {
+  background: url("../wallpaper_files/35663.jpg");
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: cover;
+  background-position: center;
+  width: 400px;
+  height: 200px;
+  border-radius: 500px;
+  overflow: visible;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  right: -350px;
+  margin-bottom: 15px;
+  transition: transform 0.1s linear;
+}
+
+.box3 {
+  background: url("../wallpaper_files/123.jpg");
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: cover;
+  background-position: center;
+  width: 400px;
+  height: 200px;
+  border-radius: 500px;
+  overflow: visible;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  right: -350px;
+  transition: transform 0.1s linear;
+}
+
+.box1 {
+  background: url("../wallpaper_files/4690.jpg");
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: cover;
+  background-position: center;
+  width: 400px;
+  height: 200px;
+  border-radius: 500px;
+  overflow: visible;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  right: -350px;
+  margin-bottom: 15px;
+  transition: transform 0.1s linear;
+}
+
+.forB1 {
+  position: absolute;
+  bottom: 0px;
+  height: 100%;
+  background: transparent;
+  backdrop-filter: blur(3px);
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.4s, opacity 0.8s linear;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hForB1 {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 50px;
+}
+
+.forB2 {
+  position: absolute;
+  bottom: 0px;
+  height: 100%;
+  background: transparent;
+  backdrop-filter: blur(3px);
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.4s, opacity 0.8s linear;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hForB2 {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 50px;
+}
+
+.forB3 {
+  position: absolute;
+  bottom: 0px;
+  height: 100%;
+  background: transparent;
+  backdrop-filter: blur(3px);
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.4s, opacity 0.8s linear;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hForB3 {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 50px;
+}
+
+.boxForAll {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 60%;
+}
+
+.Search1 {
+  position: absolute;
+  top: 50px;
+  width: 700px;
+  border-radius: 50px;
+  border: 50px;
+  padding: 15px;
+  height: 20px;
+  font-size: 15px;
+  transition: 0.5s;
+  z-index: 1;
+  margin-bottom: 100px;
+  visibility: hidden;
+}
+
+.Search1:hover {
+  font-size: 18px;
+  top: 45px;
+  background-color: rgb(255, 255, 238);
+}
+
+.boxForAmerican {
+  background: transparent;
+  backdrop-filter: blur(100px);
+  width: 900px;
+  height: 600px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  overflow: visible;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.8s linear;
+}
+
+.Search2 {
+  position: absolute;
+  top: 50px;
+  width: 700px;
+  border-radius: 50px;
+  border: 50px;
+  padding: 15px;
+  height: 20px;
+  font-size: 15px;
+  transition: 0.5s;
+  z-index: 1;
+  margin-bottom: 100px;
+  visibility: hidden;
+}
+
+.Search2:hover {
+  font-size: 16px;
+  top: 48px;
+  background-color: rgb(255, 255, 238);
+}
+
+.boxForTurkish {
+  background: transparent;
+  backdrop-filter: blur(100px);
+  width: 900px;
+  height: 600px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  overflow: visible;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  z-index: 6;
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.8s linear;
+}
+
+.Search3 {
+  position: absolute;
+  top: 50px;
+  width: 700px;
+  border-radius: 50px;
+  border: 50px;
+  padding: 15px;
+  height: 20px;
+  font-size: 15px;
+  transition: 0.5s;
+  margin-bottom: 100px;
+  visibility: hidden;
+}
+
+.Search3:hover {
+  font-size: 18px;
+  top: 45px;
+  background-color: rgb(255, 255, 238);
+}
+
+.boxForArapian {
+  background: transparent;
+  backdrop-filter: blur(100px);
+  width: 900px;
+  height: 600px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  overflow: visible;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  z-index: 7;
+  visibility: hidden;
+  position: absolute;
+  transition: visibility 1s linear;
+  opacity: 0;
+  transition: opacity 0.8s linear;
+}
+.backButton {
+  position: absolute;
+  right: 20px;
+  bottom: 25px;
+
+  width: 150px;
+  height: 30px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: 0.5s;
+}
+.backButton:hover {
+  background-color: transparent;
+  backdrop-filter: blur(100);
+  color: whitesmoke;
+}
+
+.moviesAmerican {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow: hidden;
+}
+.moviesTurkish {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow: hidden;
+}
+.moviesArabic {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow: hidden;
+}
+
+.scrollRight {
+  position: absolute;
+  right: calc(50% - 80px);
+  bottom: -275px;
+  width: 90px;
+  font-size: 55px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: transparent;
+  border: none;
+  color: white;
+  transition: 0.7s;
+  bottom: -13px;
+}
+
+.scrollRight2 {
+  position: absolute;
+  right: 34%;
+  width: 90px;
+  font-size: 55px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: transparent;
+  border: none;
+  color: white;
+  transition: 0.7s;
+  letter-spacing: -20px;
+  bottom: -13px;
+}
+
+.scrollRight:hover,
+.scrollLeft:hover,
+.scrollRight2:hover,
+.scrollLeft2:hover {
+  color: rgb(183, 45, 45);
+}
+
+.scrollLeft {
+  position: absolute;
+  left: calc(50% - 80px);
+  width: 90px;
+  font-size: 55px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: transparent;
+  border: none;
+  color: white;
+  transition: 0.7s;
+  bottom: -13px;
+}
+.scrollLeft2 {
+  position: absolute;
+  left: 32%;
+  bottom: -13px;
+  width: 90px;
+  font-size: 55px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: transparent;
+  border: none;
+  color: white;
+  transition: 0.7s;
+  letter-spacing: -20px;
+}

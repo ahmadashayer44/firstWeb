@@ -1,0 +1,49 @@
+body {
+  background: url("../wallpaper_files/farzad-p-xSl33Wxyc-unsplash.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  backdrop-filter: blur(7px);
+}
+.holePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header {
+  color: rgb(255, 255, 255);
+  font-family: cursive;
+  font-size: 90px;
+  position: relative;
+  top: 0;
+}
+.inboxDiv {
+  width: 1000px;
+  height: 500px;
+  background-color: rgba(69, 73, 72, 0.928);
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.backButton {
+  position: relative;
+  z-index: 15;
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: 0.5s;
+}
+.backButton:hover {
+  background-color: transparent;
+  backdrop-filter: blur(100);
+  color: whitesmoke;
+}

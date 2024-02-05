@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <link rel="stylesheet" href="../css_files/showMenu1.css">
+    <style></style>
+    <script src="../js_files/menu.js"></script>
+    <script src="../js_files/getAmericanMovies.js"></script>
+    
+</head>
+<body>
+<div class="boxForAll">                                                                    
+  
+  <div class="box1" id="box1">
+    <i class="forB1">    <h2 class="hForB1">American</h2>
+    </i>
+</div>
+
+<div class="box2" id="box2">
+  <i class="forB2">    <h2 class="hForB2">Turkish</h2>
+  </i>
+</div>
+
+<div class="box3" id="box3">
+  <i class="forB3">    <h2 class="hForB3">Arabian</h2>
+  </i>
+</div>
+</div>
+
+    <div class="box">
+    
+<div class="menu">
+<h2>Moive Studios</h2>
+<span class="forAnimation1"></span>
+<span class="forAnimation2"></span>
+<button class="addMovies" onclick="inbox()" >Inbox</button>
+   <button class="addMovies" onclick="addMovies()" >Add New Movies</button>
+<button class="logOut" onclick="redirectToSignInPage()" >Log Out</button>
+ 
+
+
+
+
+</div>    
+
+
+
+
+</div>    
+
+
+<div class="boxForAmerican">
+  <input type="search" id="search1" placeholder="Search for Movie" class="Search1">
+  <div id="moviesAmerican" class="moviesAmerican"></div>
+  <input type="button" onclick="rightAScroll()" id="scrollRight" value=">" class="scrollRight"></input>
+  <input type="button" onclick="leftAScroll()" id="scrollLeft" class="scrollLeft" value="<"></input>
+  <input type="button" onclick="rightADoubleScroll2()" id="scrollRight" value=">>" class="scrollRight2"></input>
+  <input type="button" onclick="leftADoubleScroll2()" id="scrollLeft" class="scrollLeft2" value="<<"></input>
+  <input type="submit" value="Back" class="backButton" onclick=backToPage()>
+</div>
+<div class="boxForTurkish">
+  <input type="search" id="search2" placeholder="Search for Movie" class="Search2">
+  <div id="moviesTurkish" class="moviesTurkish"></div>
+  <input type="button" onclick="rightTScroll()" id="scrollRight" value=">" class="scrollRight"></input>
+  <input type="button" onclick="leftTScroll()" id="scrollLeft" class="scrollLeft" value="<"></input>
+  <input type="button" onclick="rightTDoubleScroll2()" id="scrollRight" value=">>" class="scrollRight2"></input>
+  <input type="button" onclick="leftTDoubleScroll2()" id="scrollLeft" class="scrollLeft2" value="<<"></input>
+  <input type="submit" value="Back" class="backButton" onclick=backToPage()>
+
+</div>
+
+
+</div>    
+
+<div class="boxForArapian">
+  <input type="search" placeholder="Search for Movie" id="search3" class="Search3">
+  <div id="moviesArabic" class="moviesArabic"></div>
+  <input type="button" onclick="rightArScroll()" id="scrollRight" value=">" class="scrollRight"></input>
+  <input type="button" onclick="leftArScroll()" id="scrollLeft" class="scrollLeft" value="<"></input>
+  <input type="button" onclick="rightArDoubleScroll2()" id="scrollRight" value=">>" class="scrollRight2"></input>
+  <input type="button" onclick="leftArDoubleScroll2()" id="scrollLeft" class="scrollLeft2" value="<<"></input>
+  <input type="submit" value="Back" class="backButton" onclick=backToPage()>
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

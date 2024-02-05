@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <link rel="stylesheet" href="../css_files/contactPage.css">
+    <style></style>
+</head>
+<body>
+<div class="box">
+    <h2>Contact us</h2>
+    <p>If there are any issues with our movies or the website itself, please fill out the form below.</p>
+
+    <form onsubmit="sendEmail(); return false;">
+        <div class="inputBox">
+            <input type="text" required="required" id="gmail">
+            <span>Name</span>
+            <i></i>
+        </div>
+
+        <div class="inputBoxForIssue">
+            <textarea id="messageInfo" required="required"></textarea>
+        </div>
+
+        <input type="submit"class="submit" value="Submit" onsubmit="sendEmail(); return false;">
+    </form>
+</div>
+<input type="submit"  onclick="back()" value="Back" class="addInput">
+
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="../js_files/mail.js"></script>
+</body>
+</html>
